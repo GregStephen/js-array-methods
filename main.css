@@ -1,3 +1,40 @@
 body {
     background-color: bisque;
 }
+
+h4 {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#the-bus {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.bus-seat {
+    border: 2px solid black;
+    border-radius: 2%;
+    box-shadow: 2px 4px 50px grey;
+    width: 50%;
+    background-color: cornsilk;
+    padding: 2em;
+    text-align: center;
+    margin: 1em;
+}
+
+/* ////////////MEDIA QUERIES////////// */
+
+@media only screen and (min-width: 525px) {
+    .bus-seat {
+        width: 25%;
+    }
+};
+
+@media only screen and (min-width: 1000px) {
+    .bus-seat {
+        width: 15%;
+    }
+};
